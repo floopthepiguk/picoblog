@@ -1,0 +1,16 @@
+%nav.top-bar{ data: { topbar: true }, role: :navigation}
+  %ul.title-area
+    %li.name
+      %h1
+        %a.logo{ href: root_path } <span>P</span>icoblog
+    %li.toggle-topbar.menu-icon
+      %a{ href:'#' }
+        %span Menu
+
+  %section.top-bar-section
+    %ul.right
+      %li
+        %a{ href: nil } About
+      %li
+        =link_to 'Log In', new_user_session_path
+       
