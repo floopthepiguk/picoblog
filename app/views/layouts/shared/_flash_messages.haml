@@ -1,0 +1,4 @@
+-flash.each do |name, msg|
+  .alert-box{:data => {:alert => true}}
+    =msg
+    %a{:href=>"#",:class=>"close"} &times;

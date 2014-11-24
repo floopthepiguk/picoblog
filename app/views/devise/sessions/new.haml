@@ -1,13 +1,9 @@
-.small-6.small-centered.column
-  #login-form.panel
-    %h3 Log in  
-    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
-      .field
-        =f.label :email
-        =f.email_field :email, autofocus: true 
-      .field
-        =f.label :password
-        =f.password_field :password, autocomplete: :off
-      .actions
-        = f.submit 'Log in', class: :button
-      = render 'devise/shared/links' 
+- if request.xhr?
+  = render 'form'
+  %a.close-reveal-modal &#215;
+- else
+  #login-form
+    .small-6.small-centered.columns.panel
+      = render 'form'
+
+
