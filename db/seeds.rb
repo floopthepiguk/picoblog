@@ -7,6 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 YAML.load_file(File.join(Rails.root, 'config', 'icons.yml')).each do |k,v|
-  Icon.create(name: k, reference_id: v['ref'], code: v['code'])
+  icon = Icon.new(name: k, code: v['code'])
+  icon.id = v['ref']
+  icon.save
 end
 
