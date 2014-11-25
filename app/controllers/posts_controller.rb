@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
+  load_and_authorize_resource
 
   respond_to :html
 
   def index
-    @posts = Post.all
     respond_with(@posts)
   end
 
@@ -37,11 +37,8 @@ class PostsController < ApplicationController
   end
 
   private
-    def set_post
-      @post = Post.find(params[:id])
-    end
+  def post_params
+    params.require(:post).permit(:color)
+  end
 
-    def post_params
-      params.require(:post).permit(:color)
-    end
 end
