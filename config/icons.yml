@@ -1,0 +1,97 @@
+home:   
+  ref: 0
+  code: "\e600"
+pencil:   
+  ref: 1
+  code: "\e601"
+
+droplet:      
+  ref: 2
+  code: "\e602"
+headphoenes:
+  ref: 3 
+  code: "\e603"
+dice:         
+  ref: 4 
+  code: "\e604"
+pacman: 
+  ref: 5
+  code: "\e605"
+spades: 
+  ref: 6
+  code: "\e606"
+clubs:  
+  ref: 7
+  code: "\e607"
+diamonds:
+  ref: 8
+  code: "\e608"
+bullhorn:
+  ref: 9
+  code: "\e609"
+book:   
+  ref: 10
+  code: "\e60a"
+books:   
+  ref: 11
+  code: "\e60b"
+happy:   
+  ref: 12
+  code: "\e60c"
+smiley:  
+  ref: 13
+  code: "\e60d"
+tongue: 
+  ref: 14
+  code: "\e60e"
+sad:     
+  ref: 15
+  code: "\e60f"
+wink:    
+  ref: 16
+  code: "\e610"
+grin:    
+  ref: 17
+  code: "\e611"
+cool:    
+  ref: 18
+  code: "\e612"
+angry:   
+  ref: 19
+  code: "\e613"
+evil:    
+  ref: 20
+  code: "\e614"
+shocked: 
+  ref: 21
+  code: "\e615"
+confused:
+  ref: 22
+  code: "\e616"
+neutral: 
+  ref: 23
+  code: "\e617"
+wondering:
+  ref: 24
+  code: "\e618"
+point-up:
+  ref: 25
+  code: "\e619"
+point-right:
+  ref: 26
+  code: "\e61a"
+point-down:
+  ref: 27
+  code: "\e61b"
+point-left: 
+  ref: 28
+  code: "\e61c"
+heart:   
+  ref: 29
+  code: "\e61d"
+star:    
+  ref: 30
+  code: "\e61e"
+like:    
+  ref: 31
+  code: "\e61f"

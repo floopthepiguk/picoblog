@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122133527) do
+ActiveRecord::Schema.define(version: 20141125194504) do
+
+  create_table "icons", force: true do |t|
+    t.integer  "reference_id"
+    t.string   "name"
+    t.string   "code"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "icons", ["reference_id"], name: "index_icons_on_reference_id", unique: true
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

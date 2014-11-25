@@ -3,5 +3,10 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   cities = City.create([{ name: 'Chicago' , { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+YAML.load_file(File.join(Rails.root, 'config', 'icons.yml')).each do |k,v|
+  Icon.create(name: k, reference_id: v['ref'], code: v['code'])
+end
+
