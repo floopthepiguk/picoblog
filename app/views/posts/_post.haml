@@ -1,7 +1,10 @@
-%article.panel
-  = post.color
-  = link_to 'Show', post
-  = link_to 'Edit', edit_post_path(post)
-  = link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-
+.panel
+  - if can? :manage, post
+    .actions.right
+      = link_to 'Edit', edit_post_path(post)
+      |
+      = link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  .row
+    .small-6.small-centered.columns
+      %span{ class: :post, style: "color: #{post.color}" }
+        = render post.icon
