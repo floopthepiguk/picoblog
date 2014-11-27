@@ -1,2 +1,5 @@
-=render @post
+=render @post  
+.row
+  .small-6.small-centered.columns.text-center
+    =render partial: 'actions', locals: { post: @post }
 

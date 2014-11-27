@@ -1,0 +1,12 @@
+%ul.inline-list
+  - if action_name != 'show'
+    %li
+      = link_to "0 Comments", post
+    
+  - if can? :manage, post
+    %li
+      = link_to 'Edit', edit_post_path(post)
+    %li
+      = link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }  
+
+
