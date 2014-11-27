@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   respond_to :html
 
   def index
-    respond_with(@posts)
+    @posts = current_user.posts
   end
 
   def show
@@ -21,7 +21,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.new(post_params)
     @post.save
     respond_with(@post)
   end
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:color)
+    params.require(:post).permit(:color, :icon_id)
   end
 
 end

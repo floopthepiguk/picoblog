@@ -1,13 +1,12 @@
 = form_for @post do |f|
-  - if @post.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
-      %ul
-        - @post.errors.full_messages.each do |msg|
-          %li= msg
-
+  = render_errors_for @post
+  
+  .field
+    =render partial: 'icons/icon_fields', locals: { f: f, selected_icon: @post.icon_id || 1 }
+  %br
   .field
     = f.label :color
-    = f.color_field :color
+    = f.color_field :color, value: @post.color
   .actions
-    = f.submit 'Save'
+    = f.submit @post.new_record? ? 'Post' : 'Update', class: :button
+    = link_to "Cancel", posts_path 

@@ -3,4 +3,16 @@ form {
     width: 4em;
     height: 4em;
   }
+
+  //as in... when an icon is in the form to be selected
+  .icon {
+    display: inline-block;
+    padding: 5px;
+    font-size: 2em;
+    &.selected {
+      background-color: $primary-color;
+      color: white;
+      @include border-radius(2px);
+    }
+  }
 }
