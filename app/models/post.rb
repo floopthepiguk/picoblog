@@ -9,9 +9,17 @@ class Post < ActiveRecord::Base
   # ASSOCIATIONS
   # 
   belongs_to :icon
+  belongs_to :user
+  has_many :comments
+
 
   #
   # SCOPES
   #
   default_scope {  order("created_at DESC") } 
+
+
+  def root_comments
+    comments.where(comment_id: nil)
+  end
 end

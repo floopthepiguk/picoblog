@@ -1,0 +1,7 @@
+.comment
+  .panel
+    %span{ style: "color: #{comment.color}" }   
+      = render comment.icon
+    %span.author by #{link_to comment.user.email,"#"}
+
+    = render comment.comments

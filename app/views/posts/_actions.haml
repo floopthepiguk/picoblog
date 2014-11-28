@@ -1,7 +1,7 @@
 %ul.inline-list
   - if action_name != 'show'
     %li
-      = link_to "0 Comments", post
+      = link_to pluralize(post.comments.count, "comment"), post
     
   - if can? :manage, post
     %li
