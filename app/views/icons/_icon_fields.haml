@@ -3,6 +3,7 @@
   = f.label :icon
 
   - Icon.all.each do |icon|
-    %span.icon{ class: "icon-#{icon.name}", 
-    ng: { click: "updateSelected(#{icon.id})", class: "{selected: selectedIcon == #{icon.id}}" } }
+    =render_icon icon, 
+      'ng-click' => "updateSelected(#{icon.id})", 
+      'ng-class' => "{selected: selectedIcon == #{icon.id}}"
 

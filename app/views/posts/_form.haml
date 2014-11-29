@@ -2,7 +2,7 @@
   = render_errors_for @post
   
   .field
-    =render partial: 'icons/icon_fields', locals: { f: f, selected_icon: @post.icon_id || 1 }
+    = icon_field f, @post.icon_id
   %br
   .field
     = f.label :color
