@@ -4,9 +4,12 @@ class Ability
   def initialize(user)
     user ||= User.new
 
+    #Posts
     can :manage, Post, user_id: user.id
-    can :manage, Comment
     can :read, Post
+
+    #Comments
+    can :create, Comment
   end
 
 end

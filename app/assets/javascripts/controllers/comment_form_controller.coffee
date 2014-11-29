@@ -2,6 +2,8 @@
   "$scope"
   ($scope) ->
 
+    $scope.comment = { icon_id: 1, color: "#FF0000" }
+
     $scope.form_visible = false
 
     $scope.show_form = ->

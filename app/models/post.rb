@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   #
   # VALIDATIONS
   #
-  validates :icon, presence: true
+  validates :icon, :user, presence: true
 
   #
   # ASSOCIATIONS
