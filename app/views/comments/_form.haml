@@ -1,11 +1,12 @@
-%div{ ng: { controller: 'CommentFormController' } }
-  %a{ href: "#", ng: { hide: 'form_visible', click: 'show_form()' } } 
+%div{ ng: { controller: 'CommentFormController', submit: 'hide_form()' } }
+
+  %a.button{ href: "#", ng: { hide: 'form_visible', click: 'show_form()' } } 
     Reply
 
-  .panel{ ng: { show: 'form_visible' } }
+  .panel.ng-hide{ ng: { show: 'form_visible' } }
     %h3 New Comment
 
-    = form_for [post, Comment.new] do |f|
+    = form_for [post, Comment.new], remote: true do |f|
       
       .field
         =render partial: 'icons/icon_fields', locals: { f: f, selected_icon: 1 }

@@ -7,8 +7,16 @@ class CommentsController < ApplicationController
   # POST /posts/1/comments
   # 
   def create
-    @post.comments.create(comment_params.merge(user_id: current_user.id))
-    redirect_to @post, notice: "Comment succesfully posted"
+    @comment = @post.comments.create(comment_params.merge(user_id: current_user.id))
+    
+    if @comment
+      respond_to do |format|
+        format.html { redirect_to @post, notice: "Comment succesfully posted" }
+        format.js { render layout: false }
+      end
+    else
+      redirect_to @post, notice: "Could not update Post"
+    end
   end
 
 

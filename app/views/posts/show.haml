@@ -3,9 +3,9 @@
   .small-6.small-centered.columns.text-center
     =render partial: 'actions', locals: { post: @post }
 
-=render partial: 'comments/form', locals: { post: @post  }
 
-=render @post.comments
+.comments
+  =render @post.comments
 
 =render partial: 'comments/form', locals: { post: @post  }
 
