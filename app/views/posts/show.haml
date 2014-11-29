@@ -1,6 +1,11 @@
-=render @post  
+=render @post 
 .row
   .small-6.small-centered.columns.text-center
     =render partial: 'actions', locals: { post: @post }
 
-=render @post.root_comments
+=render partial: 'comments/form', locals: { post: @post  }
+
+=render @post.comments
+
+=render partial: 'comments/form', locals: { post: @post  }
+

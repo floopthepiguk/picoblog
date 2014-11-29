@@ -2,6 +2,4 @@
   .panel
     %span{ style: "color: #{comment.color}" }   
       = render comment.icon
-    %span.author by #{link_to comment.user.email,"#"}
-
-    = render comment.comments
+    %span.author by #{link_to comment.user.email,"#"} on #{comment.created_at.to_date}

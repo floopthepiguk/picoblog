@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20141128222045) do
     t.integer  "user_id"
     t.integer  "post_id"
     t.integer  "icon_id"
-    t.integer  "comment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

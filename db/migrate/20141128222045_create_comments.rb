@@ -5,7 +5,6 @@ class CreateComments < ActiveRecord::Migration
       t.references :user
       t.references :post
       t.references :icon
-      t.references :comment
 
       t.timestamps null: false
     end

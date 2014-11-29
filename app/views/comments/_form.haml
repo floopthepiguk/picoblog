@@ -1,0 +1,18 @@
+%div{ ng: { controller: 'CommentFormController' } }
+  %a{ href: "#", ng: { hide: 'form_visible', click: 'show_form()' } } 
+    Reply
+
+  .panel{ ng: { show: 'form_visible' } }
+    %h3 New Comment
+
+    = form_for [post, Comment.new] do |f|
+      
+      .field
+        =render partial: 'icons/icon_fields', locals: { f: f, selected_icon: 1 }
+      %br
+      .field
+        = f.label :color
+        = f.color_field :color 
+      .actions
+        = f.submit 'Reply', class: :button
+        %a{ href: '#', ng: { click: 'hide_form()'} } Cancel 

@@ -5,6 +5,7 @@ class Ability
     user ||= User.new
 
     can :manage, Post, user_id: user.id
+    can :manage, Comment
     can :read, Post
   end
 
