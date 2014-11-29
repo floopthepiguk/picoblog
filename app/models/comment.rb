@@ -13,4 +13,11 @@ class Comment < ActiveRecord::Base
   #
   validates :icon, :user, :post, presence: true
 
+
+  #
+  # DEMETER DELEGATIONS
+  #
+  delegate :email, to: :user, prefix: true
+
+
 end

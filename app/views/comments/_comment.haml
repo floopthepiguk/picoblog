@@ -4,4 +4,4 @@
 
     %span{ style: "color: #{comment.color}" }   
       = render comment.icon
-    %span.author by #{link_to comment.user.email,"#"} on #{comment.created_at.to_date}
+    %span.author by #{link_to comment.user_email,"#"} on #{comment.created_at}
