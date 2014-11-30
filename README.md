@@ -3,7 +3,7 @@ picoblog
 
 pico-blogging software
 
-# Getting a dev environment set up
+# Creating a Development Environment 
 
 Clone the repo, then: 
 
