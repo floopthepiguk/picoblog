@@ -1,7 +1,9 @@
 .comment
   .panel
-    = avatar_for comment.user
 
     %span{ style: "color: #{comment.color}" }   
       = render comment.icon
-    %span.author by #{link_to comment.user_email,"#"} on #{comment.created_at}
+    %span.author 
+      by #{link_to comment.user_email,"#"} on #{comment.created_at}
+      = avatar_for comment.user
+

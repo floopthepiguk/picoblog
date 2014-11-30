@@ -16,4 +16,7 @@
         =link_to 'About', about_path
       %li
         =render 'devise/sessions/login_controls'
+      -if user_signed_in?
+        %li
+          = avatar_for current_user
       

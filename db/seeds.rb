@@ -6,9 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' , { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-YAML.load_file(File.join(Rails.root, 'config', 'icons.yml')).each do |k,v|
-  icon = Icon.new(name: k, code: v['code'])
-  icon.id = v['ref']
-  icon.save
-end
 
