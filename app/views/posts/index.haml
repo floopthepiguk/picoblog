@@ -1,5 +1,6 @@
-%h1 Listing posts
-= link_to 'New Post', new_post_path, class: :button
+%h1 Listing #{@user.email}'s posts
+- if can? :manage, @user
+  = link_to 'New Post', new_user_post_path(@user), class: :button
 
 - @posts.each do |post|
   %hr

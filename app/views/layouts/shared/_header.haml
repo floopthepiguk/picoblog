@@ -11,7 +11,7 @@
     %ul.right
       -if user_signed_in?
         %li
-          =link_to "Posts", posts_path 
+          =link_to "Your Posts", user_posts_path(current_user)
       %li
         =link_to 'About', about_path
       %li

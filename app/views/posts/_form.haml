@@ -1,4 +1,4 @@
-= form_for @post do |f|
+= form_for [@user, @post] do |f|
   = render_errors_for @post
   
   .field
@@ -9,4 +9,4 @@
     = f.color_field :color, value: @post.color
   .actions
     = f.submit @post.new_record? ? 'Post' : 'Update', class: :button
-    = link_to "Cancel", posts_path 
+    = link_to "Cancel", user_posts_path(@user)

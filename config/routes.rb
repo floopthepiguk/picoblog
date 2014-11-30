@@ -4,14 +4,16 @@ Rails.application.routes.draw do
   root  'home#index'
   get   'about', to: 'home#about'
 
+  # DEVISE routes
+  devise_for :users, controllers: { :sessions => "sessions" }
 
   # REST routes
-  resources :posts do
-    resources :comments, only: :create
+  resources :users do
+    resources :posts do
+      resources :comments, only: :create
+    end
   end
 
 
-  # DEVISE routes
-  devise_for :users, controllers: { :sessions => "sessions" }
 
 end

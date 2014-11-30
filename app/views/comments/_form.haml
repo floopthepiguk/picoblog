@@ -6,7 +6,7 @@
   #new-comment-form.panel.ng-hide{ ng: { show: 'form_visible' } }
     %h3 New Comment
 
-    = form_for [post, Comment.new], remote: true do |f|
+    = form_for [post.user, post, Comment.new], remote: true do |f|
       
       .field
         = icon_field f
