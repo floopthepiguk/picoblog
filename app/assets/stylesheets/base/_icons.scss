@@ -24,17 +24,6 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// sizes (consider moving to another file / making nicer)
-.buckets {
-  [class^="icon-"], [class*=" icon-"] {
-    font-size: 6em;
-  }
-}
-.actions {
-  [class^="icon-"], [class*=" icon-"] {
-    font-size: 3em;
-  }
-}
 
 
 .icon-home:before {
@@ -456,6 +445,9 @@
 }
 .icon-enter:before {
 	content: "\e68b";
+}
+.icon-exit:before {
+	content: "\e68d";
 }
 .icon-scissors:before {
 	content: "\e68c";

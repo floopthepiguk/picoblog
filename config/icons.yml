@@ -421,3 +421,6 @@ enter:
 scissors:
   code: "\e68c"
   ref: 141
+exit:
+  code: "\e68d"
+  ref: 142

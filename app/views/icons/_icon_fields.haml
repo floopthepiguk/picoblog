@@ -1,6 +1,5 @@
 %div{ ng: { controller: 'IconFormController' } }
   = f.hidden_field :icon_id, id: :selected_icon_id, required: true, 'ng-value' => :selectedIcon
-  = f.label :icon
 
   - Icon.all.each do |icon|
     =render_icon icon, 

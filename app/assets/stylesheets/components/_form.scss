@@ -20,4 +20,12 @@ form {
       @include border-radius(2px);
     }
   }
+
+  button[type='submit'] {
+    color: $primary-color;
+    background-color: transparent;
+  }
+  .cancel_button .icon-cancel-circle {
+    color: $secondary-color !important; 
+  }
 }

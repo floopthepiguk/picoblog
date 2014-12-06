@@ -1,4 +1,6 @@
-%h2 News Feed
-= link_to 'New Post', new_user_post_path(current_user), class: :button
+.row
+  %h2 News Feed
+  .small-4.small-centered.columns
+    = paginate @posts
 .posts
   = render @posts

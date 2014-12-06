@@ -1,0 +1,27 @@
+// Icons that are part of the home page "buckets"
+.buckets {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 6em;
+  }
+}
+
+// Icons that are part of the "actions" (e.g. edit, delete..)
+.actions {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 3em;
+  }
+}
+
+// Icons that are part of the top-bar
+nav.top-bar {
+  [class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle;
+    font-size: 2em;
+  }
+}
+
+.button {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 2em;
+  }
+}

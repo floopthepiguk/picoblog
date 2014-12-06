@@ -2,7 +2,9 @@
 
 
   %li
-    = link_to pluralize(post.comments.count, "comment"), user_post_path(post.user, post)
+    = link_to user_post_path(post.user, post) do
+      = post.comments_count
+      %span.icon-bubbles
     
   - if can? :manage, post
     %li

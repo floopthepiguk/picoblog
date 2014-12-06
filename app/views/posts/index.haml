@@ -1,6 +1,8 @@
-%h1 Listing #{@user.email}'s posts
-- if can? :manage, @user
-  = link_to 'New Post', new_user_post_path(@user), class: :button
+.row
+  %h2 Posts by #{@user.email}
+  .small-4.small-centered.columns
+    = paginate @posts
 
 .posts
+  = paginate @posts
   = render @posts

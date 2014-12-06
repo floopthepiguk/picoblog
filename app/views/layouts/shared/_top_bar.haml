@@ -9,13 +9,22 @@
 
   %section.top-bar-section
     %ul.right
+      %li
+        =link_to root_path do
+          %span.icon-home
       -if user_signed_in?
         %li
-          #{ link_to "Welcome, #{current_user.email}", user_posts_path(current_user) }
+          = link_to new_user_post_path(current_user) do
+            %span.icon-bubble
         %li
-          =link_to 'Feed', news_feed_path
+          = link_to user_posts_path(current_user) do
+            %span.icon-user
+        %li
+          =link_to news_feed_path do
+            %span.icon-connection
       %li
-        =link_to 'About', about_path
+        =link_to about_path do
+          %span.icon-question
       %li
         =render 'devise/sessions/login_controls'
 

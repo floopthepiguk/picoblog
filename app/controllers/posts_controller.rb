@@ -7,6 +7,7 @@ class PostsController < ApplicationController
   respond_to :html
 
   def index
+    @posts = @posts.page params[:page]
   end
 
   def show

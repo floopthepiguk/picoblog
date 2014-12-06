@@ -1,5 +1,7 @@
 - if user_signed_in?
-  =link_to 'Log Out', destroy_user_session_path, method: :delete 
+  =link_to destroy_user_session_path, method: :delete do
+    %span.icon-exit
 -else
   #loginModal.reveal-modal.small{ data: { reveal: true } }
-  =link_to 'Log In', new_user_session_path, data: { reveal_ajax: true, reveal_id: :loginModal }
+  =link_to new_user_session_path, data: { reveal_ajax: true, reveal_id: :loginModal } do
+    %span.icon-enter

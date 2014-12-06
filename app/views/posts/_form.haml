@@ -5,8 +5,12 @@
     = icon_field f, @post.icon_id
   %br
   .field
-    = f.label :color
     = f.color_field :color, value: @post.color
-  .actions
-    = f.submit @post.new_record? ? 'Post' : 'Update', class: :button
-    = link_to "Cancel", user_posts_path(@user)
+
+  .actions.row
+    .small-3.small-centered.columns
+      =f.button(type: :submit) do
+        %span.icon-checkmark-circle      
+          
+      = link_to user_posts_path(@user), class: :cancel_button do
+        %span.icon-cancel-circle

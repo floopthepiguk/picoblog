@@ -25,6 +25,10 @@ gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 
 
+# MIST OTHER GEMS
+gem 'kaminari'
+
+
 # DEV AND TEST
 group :development, :test do
   gem 'byebug'

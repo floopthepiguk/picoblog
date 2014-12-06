@@ -23,6 +23,7 @@ class Post < ActiveRecord::Base
   # DEMETER DELEGATIONS
   #
   delegate :email, to: :user, prefix: true
+  delegate :count, to: :comments, prefix: true
 
 
 end
