@@ -14,16 +14,16 @@
           %span.icon-home
       -if user_signed_in?
         %li
-          = link_to new_user_post_path(current_user) do
+          =active_link_to new_user_post_path(current_user), active: ['posts', ['new']] do
             %span.icon-bubble
         %li
-          = link_to user_posts_path(current_user) do
+          =active_link_to user_posts_path(current_user), active: ['posts', ['index']] do
             %span.icon-user
         %li
-          =link_to news_feed_path do
+          =active_link_to news_feed_path do
             %span.icon-connection
       %li
-        =link_to about_path do
+        =active_link_to about_path do
           %span.icon-question
       %li
         =render 'devise/sessions/login_controls'

@@ -1,6 +1,7 @@
 nav.top-bar {
-  .avatar {
-    height: 2em;
-    width: 2em;
+  li { 
+    a.active {
+      background-color: $primary-color !important;
+    }
   }
 }

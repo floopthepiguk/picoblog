@@ -27,7 +27,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # MIST OTHER GEMS
 gem 'kaminari'
-
+gem 'active_link_to' 
 
 # DEV AND TEST
 group :development, :test do
