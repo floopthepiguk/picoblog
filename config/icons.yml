@@ -4,11 +4,10 @@ home:
 pencil:   
   ref: 2
   code: "\e601"
-
 droplet:      
   ref: 3
   code: "\e602"
-headphoenes:
+headphones:
   ref: 4 
   code: "\e603"
 dice:         
