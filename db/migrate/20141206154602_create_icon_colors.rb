@@ -10,7 +10,7 @@ class CreateIconColors < ActiveRecord::Migration
     # Specify colors here
 
     colors = {
-      pink:     '#CE45F8',
+      pink:     '#CE4F58',
       blue:     '#326F9F',
       orange:   '#EA9656',
       green:    '#2B7B4C',
