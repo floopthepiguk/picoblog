@@ -20,7 +20,6 @@ gem 'haml-rails'
 
 
 # AUTH
-gem 'gravatar_image_tag'
 gem 'cancancan'
 gem 'devise'
 gem 'bcrypt', '~> 3.1.7'

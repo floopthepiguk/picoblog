@@ -1,97 +1,423 @@
-home:   
-  ref: 1
+home:
   code: "\e600"
-pencil:   
-  ref: 2
+  ref: 1
+office:
   code: "\e601"
-
-droplet:      
-  ref: 3
+  ref: 2
+newspaper:
   code: "\e602"
-headphoenes:
-  ref: 4 
+  ref: 3
+pencil:
   code: "\e603"
-dice:         
-  ref: 5 
+  ref: 4
+droplet:
   code: "\e604"
-pacman: 
-  ref: 6
+  ref: 5
+paint-format:
   code: "\e605"
-spades: 
-  ref: 7
+  ref: 6
+image:
   code: "\e606"
-clubs:  
-  ref: 8
+  ref: 7
+camera:
   code: "\e607"
-diamonds:
-  ref: 9
+  ref: 8
+music:
   code: "\e608"
-bullhorn:
-  ref: 10
+  ref: 9
+headphones:
   code: "\e609"
-book:   
-  ref: 11
+  ref: 10
+camera2:
   code: "\e60a"
-books:   
-  ref: 12
+  ref: 11
+dice:
   code: "\e60b"
-happy:   
-  ref: 13
+  ref: 12
+pacman:
   code: "\e60c"
-smiley:  
-  ref: 14
+  ref: 13
+spades:
   code: "\e60d"
-tongue: 
-  ref: 15
+  ref: 14
+clubs:
   code: "\e60e"
-sad:     
-  ref: 16
+  ref: 15
+diamonds:
   code: "\e60f"
-wink:    
-  ref: 17
+  ref: 16
+pawn:
   code: "\e610"
-grin:    
-  ref: 18
+  ref: 17
+bullhorn:
   code: "\e611"
-cool:    
-  ref: 19
+  ref: 18
+connection:
   code: "\e612"
-angry:   
-  ref: 20
+  ref: 19
+book:
   code: "\e613"
-evil:    
-  ref: 21
+  ref: 20
+books:
   code: "\e614"
-shocked: 
-  ref: 22
+  ref: 21
+library:
   code: "\e615"
-confused:
-  ref: 23
+  ref: 22
+file:
   code: "\e616"
-neutral: 
-  ref: 24
+  ref: 23
+file2:
   code: "\e617"
-wondering:
-  ref: 25
+  ref: 24
+file3:
   code: "\e618"
-point-up:
-  ref: 26
+  ref: 25
+copy:
   code: "\e619"
-point-right:
-  ref: 27
+  ref: 26
+copy2:
   code: "\e61a"
-point-down:
-  ref: 28
+  ref: 27
+stack:
   code: "\e61b"
-point-left: 
-  ref: 29
+  ref: 28
+folder:
   code: "\e61c"
-heart:   
-  ref: 30
+  ref: 29
+tag:
   code: "\e61d"
-star:    
-  ref: 31
+  ref: 30
+tags:
   code: "\e61e"
-like:    
-  ref: 32
+  ref: 31
+ticket:
   code: "\e61f"
+  ref: 32
+cart:
+  code: "\e620"
+  ref: 33
+coin:
+  code: "\e621"
+  ref: 34
+credit:
+  code: "\e622"
+  ref: 35
+calculate:
+  code: "\e623"
+  ref: 36
+support:
+  code: "\e624"
+  ref: 37
+phone:
+  code: "\e625"
+  ref: 38
+notebook:
+  code: "\e626"
+  ref: 39
+envelope:
+  code: "\e627"
+  ref: 40
+pushpin:
+  code: "\e628"
+  ref: 41
+location:
+  code: "\e629"
+  ref: 42
+compass:
+  code: "\e62a"
+  ref: 43
+map:
+  code: "\e62b"
+  ref: 44
+clock:
+  code: "\e62c"
+  ref: 45
+alarm:
+  code: "\e62d"
+  ref: 46
+bell:
+  code: "\e62e"
+  ref: 47
+calendar:
+  code: "\e62f"
+  ref: 48
+print:
+  code: "\e630"
+  ref: 49
+keyboard:
+  code: "\e631"
+  ref: 50
+screen:
+  code: "\e632"
+  ref: 51
+mobile:
+  code: "\e633"
+  ref: 52
+tablet:
+  code: "\e634"
+  ref: 53
+tv:
+  code: "\e635"
+  ref: 54
+drawer:
+  code: "\e636"
+  ref: 55
+box-add:
+  code: "\e637"
+  ref: 56
+box-remove:
+  code: "\e638"
+  ref: 57
+disk:
+  code: "\e639"
+  ref: 58
+bubble:
+  code: "\e63a"
+  ref: 59
+bubbles:
+  code: "\e63b"
+  ref: 60
+user:
+  code: "\e63c"
+  ref: 61
+users:
+  code: "\e63d"
+  ref: 62
+user2:
+  code: "\e63e"
+  ref: 63
+users2:
+  code: "\e63f"
+  ref: 64
+user3:
+  code: "\e640"
+  ref: 65
+quotes-left:
+  code: "\e641"
+  ref: 66
+binoculars:
+  code: "\e642"
+  ref: 67
+zoomin:
+  code: "\e643"
+  ref: 68
+zoomout:
+  code: "\e644"
+  ref: 69
+expand:
+  code: "\e645"
+  ref: 70
+contract:
+  code: "\e646"
+  ref: 71
+key:
+  code: "\e647"
+  ref: 72
+settings:
+  code: "\e648"
+  ref: 73
+cogs:
+  code: "\e649"
+  ref: 74
+wand:
+  code: "\e64a"
+  ref: 75
+bug:
+  code: "\e64b"
+  ref: 76
+pie:
+  code: "\e64c"
+  ref: 77
+bars:
+  code: "\e64d"
+  ref: 78
+gift:
+  code: "\e64e"
+  ref: 79
+trophy:
+  code: "\e64f"
+  ref: 80
+glass:
+  code: "\e650"
+  ref: 81
+mug:
+  code: "\e651"
+  ref: 82
+food:
+  code: "\e652"
+  ref: 83
+leaf:
+  code: "\e653"
+  ref: 84
+rocket:
+  code: "\e654"
+  ref: 85
+hammer:
+  code: "\e655"
+  ref: 86
+fire:
+  code: "\e656"
+  ref: 87
+lab:
+  code: "\e657"
+  ref: 88
+magnet:
+  code: "\e658"
+  ref: 89
+remove:
+  code: "\e659"
+  ref: 90
+briefcase:
+  code: "\e65a"
+  ref: 91
+airplane:
+  code: "\e65b"
+  ref: 92
+truck:
+  code: "\e65c"
+  ref: 93
+road:
+  code: "\e65d"
+  ref: 94
+accessibility:
+  code: "\e65e"
+  ref: 95
+lightning:
+  code: "\e65f"
+  ref: 96
+powercord:
+  code: "\e660"
+  ref: 97
+list:
+  code: "\e661"
+  ref: 98
+list2:
+  code: "\e662"
+  ref: 99
+numbered-list:
+  code: "\e663"
+  ref: 100
+menu:
+  code: "\e664"
+  ref: 101
+tree:
+  code: "\e665"
+  ref: 102
+cloud:
+  code: "\e666"
+  ref: 103
+earth:
+  code: "\e667"
+  ref: 104
+link:
+  code: "\e668"
+  ref: 105
+flag:
+  code: "\e669"
+  ref: 106
+eye:
+  code: "\e66a"
+  ref: 107
+star:
+  code: "\e66b"
+  ref: 108
+star2:
+  code: "\e66c"
+  ref: 109
+star3:
+  code: "\e66d"
+  ref: 110
+heart:
+  code: "\e66e"
+  ref: 111
+heart-broken:
+  code: "\e66f"
+  ref: 112
+thumbs-up:
+  code: "\e670"
+  ref: 113
+thumbs-up2:
+  code: "\e671"
+  ref: 114
+happy:
+  code: "\e672"
+  ref: 115
+smiley:
+  code: "\e673"
+  ref: 116
+tongue:
+  code: "\e674"
+  ref: 117
+sad:
+  code: "\e675"
+  ref: 118
+wink:
+  code: "\e676"
+  ref: 119
+grin:
+  code: "\e677"
+  ref: 120
+cool:
+  code: "\e678"
+  ref: 121
+angry:
+  code: "\e679"
+  ref: 122
+evil:
+  code: "\e67a"
+  ref: 123
+shocked:
+  code: "\e67b"
+  ref: 124
+confused:
+  code: "\e67c"
+  ref: 125
+neutral:
+  code: "\e67d"
+  ref: 126
+wondering:
+  code: "\e67e"
+  ref: 127
+point-up:
+  code: "\e67f"
+  ref: 128
+point-right:
+  code: "\e680"
+  ref: 129
+point-down:
+  code: "\e681"
+  ref: 130
+point-left:
+  code: "\e682"
+  ref: 131
+warning:
+  code: "\e683"
+  ref: 132
+notification:
+  code: "\e684"
+  ref: 133
+question:
+  code: "\e685"
+  ref: 134
+blocked:
+  code: "\e686"
+  ref: 135
+cancel-circle:
+  code: "\e687"
+  ref: 136
+checkmark-circle:
+  code: "\e688"
+  ref: 137
+minus:
+  code: "\e689"
+  ref: 138
+plus:
+  code: "\e68a"
+  ref: 139
+enter:
+  code: "\e68b"
+  ref: 140
+scissors:
+  code: "\e68c"
+  ref: 141

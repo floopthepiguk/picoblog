@@ -1,4 +1,4 @@
-%ul.inline-list
+%ul.inline-list.actions
 
 
   %li
@@ -6,8 +6,10 @@
     
   - if can? :manage, post
     %li
-      = link_to 'Edit', edit_user_post_path(post.user, post)
+      = link_to edit_user_post_path(post.user, post) do
+        .icon-pencil
     %li
-      = link_to 'Destroy', [post.user, post], :method => :delete, :data => { :confirm => 'Are you sure?' }  
+      = link_to [post.user, post], :method => :delete, :data => { :confirm => 'Are you sure?' } do
+        .icon-remove
 
 

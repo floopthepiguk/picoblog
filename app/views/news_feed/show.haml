@@ -1,3 +1,4 @@
 %h2 News Feed
+= link_to 'New Post', new_user_post_path(current_user), class: :button
 .posts
   = render @posts

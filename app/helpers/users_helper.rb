@@ -1,6 +1,6 @@
 module UsersHelper
   def avatar_for(user)
-    gravatar_image_tag(user.email, class: [:avatar]) 
+    content_tag :span, nil,class: 'icon-user'
   end
 
   def author_link(authored_item)
