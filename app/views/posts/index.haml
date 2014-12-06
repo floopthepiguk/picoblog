@@ -2,8 +2,5 @@
 - if can? :manage, @user
   = link_to 'New Post', new_user_post_path(@user), class: :button
 
-- @posts.each do |post|
-  %hr
-  .right
-    = render partial: 'actions', locals: { post: post }
-  = render post
+.posts
+  = render @posts

@@ -11,12 +11,11 @@
     %ul.right
       -if user_signed_in?
         %li
-          =link_to "Your Posts", user_posts_path(current_user)
+          #{ link_to "Welcome, #{current_user.email}", user_posts_path(current_user) }
+      %li
+        =link_to 'Feed', news_feed_path
       %li
         =link_to 'About', about_path
       %li
         =render 'devise/sessions/login_controls'
-      -if user_signed_in?
-        %li
-          = avatar_for current_user
-      
+

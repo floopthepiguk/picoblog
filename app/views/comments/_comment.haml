@@ -3,7 +3,4 @@
 
     %span{ style: "color: #{comment.color}" }   
       = render comment.icon
-    %span.author 
-      by #{link_to comment.user_email, user_posts_path(comment.user)} on #{comment.created_at}
-      = avatar_for comment.user
-
+    = author_link(comment)

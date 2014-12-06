@@ -1,4 +1,6 @@
+//Posts on their own or in a collection
 .post { 
+  padding: 2em 0;
   text-align: center;
   margin: 1em 0;
   
@@ -6,5 +8,14 @@
    display: inline-block;
    font-size: 15em;
  }
-  
 }
+
+
+//Posts rendered as part of a collection (e.g. news feed)
+.posts .post {
+  border-bottom: 1px solid $secondary-color;
+  &:last-child {
+    border-bottom: none !important;
+  }
+}
+

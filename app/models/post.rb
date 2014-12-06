@@ -18,4 +18,11 @@ class Post < ActiveRecord::Base
   #
   default_scope {  order("created_at DESC") } 
 
+
+  #
+  # DEMETER DELEGATIONS
+  #
+  delegate :email, to: :user, prefix: true
+
+
 end
