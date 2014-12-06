@@ -40,7 +40,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:color, :icon_id)
+    params.require(:post).permit(:icon_color_id, :icon_id)
   end
 
 end

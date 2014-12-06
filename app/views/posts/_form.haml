@@ -3,9 +3,8 @@
   
   .field
     = icon_field f, @post.icon_id
-  %br
   .field
-    = f.color_field :color, value: @post.color
+    = icon_color_field f, @post.icon_color_id
 
   .actions.row
     .small-3.small-centered.columns

@@ -1,0 +1,12 @@
+.icon-color {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  &.selected{
+    color: white;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+

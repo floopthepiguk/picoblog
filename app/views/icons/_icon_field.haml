@@ -1,0 +1,9 @@
+%div{ ng: { controller: 'IconFieldController' } }
+  = f.hidden_field :icon_id, id: :selected_icon_id, required: true, 'ng-value' => :selectedIcon
+
+  .icons
+    - Icon.all.each do |icon|
+      =render_icon icon, 
+        'ng-click' => "updateSelected(#{icon.id})", 
+        'ng-class' => "{selected: selectedIcon == #{icon.id}}"
+

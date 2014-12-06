@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:color, :icon_id)
+    params.require(:comment).permit(:icon_color_id, :icon_id)
   end
 
 

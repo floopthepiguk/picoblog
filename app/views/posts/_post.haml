@@ -4,6 +4,6 @@
   .right
     = render partial: 'posts/actions', locals: { post: post }
   .small-6.small-centered.columns
-    %div{ style: "color: #{post.color}" }
+    %div{ style: "color: #{post.icon_color_hex}" }
       = render post.icon
 

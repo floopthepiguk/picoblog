@@ -1,0 +1,10 @@
+%div{ ng: { controller: 'ColorFieldController' } }
+  = f.hidden_field :icon_color_id, id: :selected_color_id, required: true, 'ng-value' => :selectedColor
+
+  .icon-colors
+    - IconColor.all.each do |icon_color|
+      %span{data: {icon_color_id: icon_color.id}, 'ng-click' => "updateSelected(#{icon_color.id})"}
+        .th
+          .icon-color{ style: "background-color: #{icon_color.hex}", 'ng-class' => "{'selected icon-checkmark-circle': selectedColor == #{icon_color.id}}"}
+      
+  

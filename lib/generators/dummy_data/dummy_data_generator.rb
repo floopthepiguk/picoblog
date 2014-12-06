@@ -49,7 +49,7 @@ class DummyDataGenerator < Rails::Generators::Base
     say_status :generating, "Dummy Posts"
     User.all.each do |user|
       NUM_POSTS_PER_USER.times do
-        user.posts.create(icon_id: random_icon_id, color: random_hex_color)
+        user.posts.create(icon_id: random_icon_id, icon_color_id: random_icon_color_id)
       end
     end
   end
@@ -60,7 +60,7 @@ class DummyDataGenerator < Rails::Generators::Base
     say_status :generating, "Dummy Comments"
     Post.all.each do |post|
       rand(MAX_NUM_COMMENTS_PER_POST).times do
-        post.comments.create(icon_id: random_icon_id, color: random_hex_color, user_id: random_user_id)
+        post.comments.create(icon_id: random_icon_id, icon_color_id: random_icon_color_id, user_id: random_user_id)
       end
     end
   end
@@ -83,7 +83,7 @@ class DummyDataGenerator < Rails::Generators::Base
     Icon.pluck(:id).shuffle.first
   end
 
-  def random_hex_color
-    "#%06x" % (rand * 0x1000000)
+  def random_icon_color_id
+    IconColor.pluck(:id).shuffle.first
   end
 end

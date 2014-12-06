@@ -11,13 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141128222045) do
+ActiveRecord::Schema.define(version: 20141206154602) do
 
   create_table "comments", force: true do |t|
-    t.string   "color"
     t.integer  "user_id"
     t.integer  "post_id"
     t.integer  "icon_id"
+    t.integer  "icon_color_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "icon_colors", force: true do |t|
+    t.string   "name"
+    t.string   "hex"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,11 +37,11 @@ ActiveRecord::Schema.define(version: 20141128222045) do
   end
 
   create_table "posts", force: true do |t|
-    t.string   "color"
     t.integer  "icon_id"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "icon_color_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: true do |t|

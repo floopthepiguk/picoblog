@@ -19,3 +19,14 @@
   }
 }
 
+
+// Show post - styles for the post show page only
+.show_post {
+  .post {
+    .actions {
+      .comment-action {
+        display: none;
+      }
+    }
+  }
+}
