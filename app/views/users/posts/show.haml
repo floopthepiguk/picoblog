@@ -1,0 +1,8 @@
+.show_post
+  =render @post 
+
+.comments
+  =render 'users/comments/comments', comments: @post.comments
+
+=render partial: 'users/comments/form', locals: { post: @post  }
+

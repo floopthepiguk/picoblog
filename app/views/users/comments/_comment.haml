@@ -2,5 +2,5 @@
   .panel
 
     %span{ style: "color: #{comment.icon_color_hex}" }   
-      = render comment.icon
+      = render 'icons/icon', icon: comment.icon
     = author_link(comment)

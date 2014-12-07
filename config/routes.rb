@@ -14,8 +14,14 @@ Rails.application.routes.draw do
   resource :news_feed, controller: :news_feed, only: :show
 
   resources :users do
-    resources :posts do
-      resources :comments, only: :create
+    
+    member do
+      put :follow
+      put :unfollow
+    end
+
+    resources :posts, controller: 'users/posts' do
+      resources :comments, only: :create, controller: 'users/comments'
     end
   end
 

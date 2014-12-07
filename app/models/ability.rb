@@ -5,7 +5,7 @@ class Ability
     user ||= User.new
 
     #Users
-    can :read, User
+    can [:read, :follow, :unfollow], User
     can :manage, User, id: user.id
 
     #Posts
