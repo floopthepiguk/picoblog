@@ -1,7 +1,8 @@
 // Icons that are part of the home page "buckets"
 .buckets {
   [class^="icon-"], [class*=" icon-"] {
-    font-size: 6em;
+    font-size: 3em;
+    color: $primary-color;
   }
 }
 

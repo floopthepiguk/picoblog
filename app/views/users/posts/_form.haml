@@ -5,9 +5,11 @@
     = icon_field f, @post.icon_id
   .field
     = icon_color_field f, @post.icon_color_id
-
-  .actions.row
-    .small-3.small-centered.columns
+  
+  %hr
+  
+  .actions.row.text-center 
+    .small-12.columns
       =f.button(type: :submit) do
         %span.icon-checkmark-circle      
           

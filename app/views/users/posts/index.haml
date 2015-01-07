@@ -1,6 +1,7 @@
-.row
-  %h2 Posts by #{@user.email}
-  = follow_button(@user)
+.row.text-center 
+  .small-12.columns
+    %h1 Posts by #{@user.email}
+    = follow_button(@user)
 
   .small-4.small-centered.columns
     = paginate @posts

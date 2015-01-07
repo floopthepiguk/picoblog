@@ -1,6 +1,10 @@
-.row
-  %h2 News Feed
-  .small-4.small-centered.columns
+.row.text-center 
+  .small-12.columns
+    %h1 News Feed
+.row.text-center 
+  .small-12.small-centered.columns
     = paginate @posts
-.posts
-  = render 'users/posts/posts', posts: @posts
+.row.text-center 
+  .small-12.columns
+    .posts
+      = render 'users/posts/posts', posts: @posts

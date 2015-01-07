@@ -6,10 +6,10 @@ form {
 
   //as in... when an icon is in the form to be selected
   .icon {
-    @include single-transition(background-color, .3s, ease-in);
+    @include single-transition(background-color, .2s, ease-in);
     display: inline-block;
     padding: 5px;
-    font-size: 2em;
+    font-size: 1.8em;
     cursor: pointer;
     &:hover {
       background-color: #eee;
@@ -27,5 +27,12 @@ form {
   }
   .cancel_button .icon-cancel-circle {
     color: $secondary-color !important; 
+  }
+}
+
+//icon select field 
+.icons {
+  li {
+    text-align: center;
   }
 }

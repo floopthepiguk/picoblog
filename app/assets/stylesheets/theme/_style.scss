@@ -1,3 +1,10 @@
+body {
+	background: #e9e7e8 image-url("bg-pat.gif") left top repeat;
+	#main_content {
+		background-color: #fff;
+		max-width: 612px;
+	}
+}
 .logo {
   font-family: 'Audiowide', cursive;
   span {

@@ -1,9 +1,8 @@
-.row[post]
-  .left
+%div[post]
+  .small-12.columns
     = author_link(post)
-  .right
-    = render partial: 'users/posts/actions', locals: { post: post }
-  .small-6.small-centered.columns
+  .small-12.columns
     %div{ style: "color: #{post.icon_color_hex}" }
       = render 'icons/icon', icon: post.icon
-
+  .small-12.columns
+    = render partial: 'users/posts/actions', locals: { post: post }
