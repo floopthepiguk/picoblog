@@ -1,23 +1,24 @@
-%div{ ng: { controller: 'CommentFormController', submit: 'hide_form()' } }
+-if user_signed_in?
+  %div{ ng: { controller: 'CommentFormController', submit: 'hide_form()' } }
 
-  %a.button{ href: "#new-comment-form", ng: { hide: 'form_visible', click: 'show_form()' } } 
-    %span.icon-bubbles
+    %a.button{ href: "#new-comment-form", ng: { hide: 'form_visible', click: 'show_form()' } } 
+      %span.icon-bubbles
 
-  #new-comment-form.panel.ng-hide{ ng: { show: 'form_visible' } }
-    %h3 New Comment
+    #new-comment-form.panel.ng-hide{ ng: { show: 'form_visible' } }
+      %h3 New Comment
 
-    = form_for [post.user, post, Comment.new], remote: true do |f|
-      
-      .field
-        = icon_field f
-      %br
-        = icon_color_field f
+      = form_for [post.user, post, Comment.new], remote: true do |f|
+        
+        .field
+          = icon_field f
+        %br
+          = icon_color_field f
 
-      .actions.row.text-center 
-        .small-12.columns
-          =f.button(type: :submit) do
-            %span.icon-checkmark-circle      
-              
-          = link_to user_posts_path(@user), class: :cancel_button do
-            %a{ class: :cancel_button, href: '#', ng: { click: 'hide_form()'} }
-              %span.icon-cancel-circle
+        .actions.row.text-center 
+          .small-12.columns
+            =f.button(type: :submit) do
+              %span.icon-checkmark-circle      
+                
+            = link_to user_posts_path(@user), class: :cancel_button do
+              %a{ class: :cancel_button, href: '#', ng: { click: 'hide_form()'} }
+                %span.icon-cancel-circle

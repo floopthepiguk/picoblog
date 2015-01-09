@@ -1,6 +1,6 @@
 module Users
   class PostsController < ApplicationController
-    before_filter :authenticate_user!
+    before_filter :authenticate_user!, except: [:index, :show]
 
     load_and_authorize_resource :user
     load_and_authorize_resource :post, through: :user

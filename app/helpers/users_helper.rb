@@ -23,6 +23,8 @@ module UsersHelper
   # follow_button
   #
   def follow_button(user)
+    return unless user_signed_in?
+
     if(current_user.following? user)
       link_to "Unfollow", unfollow_user_path(user), class: :button, method: :put
     else
