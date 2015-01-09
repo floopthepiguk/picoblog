@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   #
   # Validations
   # 
-  validates :username, presence: true
+  validates :username, presence: true, uniqueness: true
   validates :username, format: { with: /\A[a-zA-Z0-9]+\Z/ }
   validates :password, presence: true
   validates :password, confirmation: true
