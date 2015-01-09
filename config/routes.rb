@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'global_feed/show'
+
   # Static pages
   root  'home#index'
   get   'about', to: 'home#about'

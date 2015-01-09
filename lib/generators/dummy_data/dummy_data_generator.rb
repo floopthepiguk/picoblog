@@ -37,7 +37,7 @@ class DummyDataGenerator < Rails::Generators::Base
   def create_test_users
     say_status :generating, "Dummy Users"
     NUM_USERS.times do |num|
-      User.create(email: "test#{num+1}@test.com", password: 'welcome1', password_confirmation: 'welcome1')
+      User.create(username: "test#{num+1}", password: 'welcome1', password_confirmation: 'welcome1')
     end
    end
 
@@ -67,7 +67,7 @@ class DummyDataGenerator < Rails::Generators::Base
 
   def finish
     say_status :Finished, nil
-    say "\nGenerated #{NUM_USERS} users, email of the format 'testx@test.com' where x is a number between 0 and #{NUM_USERS - 1}. All User passwords are 'welcome1'\n\n", :bold
+    say "\nGenerated #{NUM_USERS} users, username of the format 'testx' where x is a number between 0 and #{NUM_USERS - 1}. All User passwords are 'welcome1'\n\n", :bold
   end
 
   ######################################

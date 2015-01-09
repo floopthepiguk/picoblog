@@ -18,8 +18,8 @@ class Comment < ActiveRecord::Base
   #
   # DEMETER DELEGATIONS
   #
-  delegate :email, to: :user,         prefix: true
-  delegate :hex,   to: :icon_color,   prefix: true,   allow_nil: true
+  delegate :username,   to: :user,         prefix: true
+  delegate :hex,        to: :icon_color,   prefix: true,   allow_nil: true
 
 
 end

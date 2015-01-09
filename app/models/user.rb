@@ -7,7 +7,15 @@ class User < ActiveRecord::Base
   # Devise
   #
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
+  devise :database_authenticatable, :registerable
+
+  #
+  # Validations
+  # 
+  validates :username, presence: true
+  validates :username, format: { with: /\A[a-zA-Z0-9]+\Z/ }
+  validates :password, presence: true
+  validates :password, confirmation: true
 
 
   #

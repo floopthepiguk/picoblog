@@ -12,6 +12,9 @@
       %li
         =link_to root_path do
           %span.icon-home
+      %li
+        =active_link_to news_feed_path do
+          %span.icon-earth
       -if user_signed_in?
         %li
           =active_link_to new_user_post_path(current_user), active: ['posts', ['new']] do
@@ -19,9 +22,6 @@
         %li
           =active_link_to user_posts_path(current_user), active: ['posts', ['index']] do
             %span.icon-user
-        %li
-          =active_link_to news_feed_path do
-            %span.icon-connection
       %li
         =active_link_to about_path do
           %span.icon-question
