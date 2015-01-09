@@ -6,7 +6,13 @@ gem 'rails', RAILS_VERSION
 
 
 # DB
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 
 # Assets and Templates
