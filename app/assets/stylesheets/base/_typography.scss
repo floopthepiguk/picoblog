@@ -1,0 +1,13 @@
+// fix shrinking headings on small
+
+@media #{$small-only} {
+	h1 {
+		font-size: 28px !important;
+	}
+	h2 {
+		font-size: 21px !important;
+	}
+	h3 {
+		font-size: 18px !important;
+	}
+ }

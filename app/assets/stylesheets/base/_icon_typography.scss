@@ -3,13 +3,14 @@
   [class^="icon-"], [class*=" icon-"] {
     font-size: 3em;
     color: $primary-color;
+    margin: .3em 0;
   }
 }
 
 // Icons that are part of the "actions" (e.g. edit, delete..)
 .actions {
   [class^="icon-"], [class*=" icon-"] {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -26,3 +27,12 @@ nav.top-bar {
     font-size: 2em;
   }
 }
+
+
+@media #{$small-only} {
+  .actions {
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 1.5em;
+  }
+}
+ }

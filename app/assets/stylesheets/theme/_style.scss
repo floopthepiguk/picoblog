@@ -3,6 +3,7 @@ body {
 	#main_content {
 		background-color: #fff;
 		max-width: 612px;
+    opacity: .9;
 	}
 }
 .logo {
@@ -14,8 +15,17 @@ body {
     border-radius: 0.2em;
   }
 }
+.buckets {
+  overflow: hidden;
+  margin: rem-calc(20) 0;
+  p {
+    font-size: 12px;
+  }
+  .icon {
 
+  }
+}
 footer {
-  background-color: black;
-  color: white;
+  background-color: #fff;
+  opacity: .6
 }

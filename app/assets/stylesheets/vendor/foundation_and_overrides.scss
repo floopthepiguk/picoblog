@@ -98,8 +98,10 @@ $include-html-global-classes: $include-html-classes;
 // We use these as default colors throughout
 $primary-color: #9C4D51;
 $secondary-color: #CCCCCC;
+$tertiary-color: #326f9f;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
+ $success-color: #2b7bc4;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
@@ -278,7 +280,7 @@ $paragraph-line-height: 1.5;
 // $hr-border-style: solid;
 // $hr-border-color: $gainsboro;
  $hr-border-color: $white-smoke;
-// $hr-margin: rem-calc(20);
+ $hr-margin: rem-calc(24);
 
 // We use these to style lists
 // $list-font-family: $paragraph-font-family;
@@ -466,12 +468,18 @@ $button-lrg: rem-calc(14);
 // $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
+// $button-border-width: 0px;
+// $button-border-style: solid;
+ $button-bg-color: $tertiary-color;
+// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+// $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
 // $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
 // $success-button-border-color: $success-button-bg-hover;
 // $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
 // $alert-button-border-color: $alert-button-bg-hover;
+
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;

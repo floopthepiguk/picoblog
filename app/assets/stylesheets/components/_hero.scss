@@ -3,6 +3,7 @@
   padding-bottom: 2em;
   .logo {
     font-size: 5em;
+    margin-bottom: 28px;
   }
   .subheader {
     text-transform: uppercase;
@@ -10,3 +11,12 @@
     letter-spacing: .05em;
   }
 }
+
+
+@media #{$small-only} {
+  .hero {
+    .logo {
+      font-size: 4em;
+    }
+  }
+ }

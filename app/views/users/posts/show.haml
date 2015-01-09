@@ -2,7 +2,10 @@
   =render @post 
 
 .comments
-  =render 'users/comments/comments', comments: @post.comments
-
-=render partial: 'users/comments/form', locals: { post: @post  }
+  .row
+    .small-12.columns
+      =render 'users/comments/comments', comments: @post.comments
+.row
+  .small-12.columns
+    =render partial: 'users/comments/form', locals: { post: @post  }
 

@@ -1,20 +1,25 @@
 //Posts on their own or in a collection
 .post { 
-  padding: 2em 0;
-  text-align: center;
-  margin: 1em 0;
+  //padding: 2em 0;
+  //margin: 1em 0;
   overflow: hidden;
+  padding: 1em 0;
   
- .icon {
-   display: inline-block;
-   font-size: 15em;
- }
+   .icon {
+     display: block;
+     font-size: 7em;
+     text-align: center;
+     padding: 36px 0;
+  }
+  .author {
+    font-size: 12px;
+  }
 }
 
 
 //Posts rendered as part of a collection (e.g. news feed)
 .posts .post {
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 4px solid #f5f5f5;
   &:last-child {
     border-bottom: none !important;
   }
@@ -31,3 +36,13 @@
     }
   }
 }
+
+
+@media #{$small-only} {
+  .post {
+    .icon {
+     display: block;
+     font-size: 5em;
+      }
+    }
+ }

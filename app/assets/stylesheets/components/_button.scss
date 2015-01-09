@@ -1,0 +1,9 @@
+.button.full {
+	width: 100%;
+}
+
+@media #{$small-only} {
+	.button {
+	width: 100%;
+  }
+ }
